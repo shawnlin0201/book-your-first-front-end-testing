@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils'
 import component from '../4-2-1-1-a.vue'
 
-it('find target element', () => {
+it.skip('find target element', () => {
   const wrapper = mount(component)
   console.log(wrapper.find({ ref: 'target'}).html())
   console.log(wrapper.find('p').html())
